@@ -1,7 +1,7 @@
 # RealmDbMigration
 RealDb migration implementation step by step
 # follow steps -
-         1. go to appDelegate set schemaVersion to 1 and if oldSchemaVersion < 1
+         1. install pod file which present in repo.Then go to appDelegate set schemaVersion to 1 and if oldSchemaVersion < 1
          2. go to appDelegate comment below lines of code -
             migration.enumerateObjects(ofType: Person.className()) { (_, newPerson) in
                 newPerson?["lastName1"] = ""
